@@ -9,10 +9,12 @@ You can also visit my website by clicking [here](https://andiazfar.wixsite.com/w
 Other than that, you can view my CATIA Design Portfolio [here](https://andiazfar.wixsite.com/edsgn497catia)!
 
 ![Alt](images/main_pic.png)
+
 This is my favorite cat, Pusheen.
+<!-- https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll -->
 
 Link to my Projects within GITHUB: 
-1. Laptop price analyzer using the Scikit-Learn library for Machine Learning.
+1. [Laptop price analyzer using the Scikit-Learn library for Machine Learning.](https://github.com/andiazfar/laptop_price_ML)
 	* This is my first mini project that I made public. I use Python with the Numpy and Scikit-Learn library to analyze features of a laptop and predict the price.
 	* There is data cleaning aspect in the Python file as well, where we clean the data so that the Scikit-Learn library can analyze the data properly.
 
