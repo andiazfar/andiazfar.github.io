@@ -6,6 +6,8 @@
 
 You can also visit my website by clicking [here](https://andiazfar.wixsite.com/website)!
 
+Other than that, you can view my CATIA Design Portfolio [here](https://andiazfar.wixsite.com/edsgn497catia)!
+
 ![This is my favorite cat](images/main_pic.png)
 
 <!---(Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
