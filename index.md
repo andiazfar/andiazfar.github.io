@@ -8,7 +8,13 @@ You can also visit my website by clicking [here](https://andiazfar.wixsite.com/w
 
 Other than that, you can view my CATIA Design Portfolio [here](https://andiazfar.wixsite.com/edsgn497catia)!
 
-![This is my favorite cat](images/main_pic.png)
+![Alt](images/main_pic.png)
+This is my favorite cat, Pusheen.
+
+Link to my Projects within GITHUB: 
+1. Laptop price analyzer using the Scikit-Learn library for Machine Learning.
+	* This is my first mini project that I made public. I use Python with the Numpy and Scikit-Learn library to analyze features of a laptop and predict the price.
+	* There is data cleaning aspect in the Python file as well, where we clean the data so that the Scikit-Learn library can analyze the data properly.
 
 <!---(Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
