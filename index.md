@@ -18,6 +18,9 @@ Link to my Projects within GITHUB:
 	* This is my first mini project that I made public. I use Python with the Numpy and Scikit-Learn library to analyze features of a laptop and predict the price.
 	* There is data cleaning aspect in the Python file as well, where we clean the data so that the Scikit-Learn library can analyze the data properly.
 
+2. [Laptop price data extraction and visualization using R.](https://github.com/andiazfar/data_vis_w_laptops)
+	* Here, I used R to extract meaningful data and made some statistical analysis. Other than that, some plots are made in which will help to visualize how the data is.
+
 <!---(Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
