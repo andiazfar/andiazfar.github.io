@@ -4,6 +4,7 @@ body {
 	background-image: url("https://images.unsplash.com/photo-1563906402047-8ddd00552a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2698&q=80");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .jumbotron {
