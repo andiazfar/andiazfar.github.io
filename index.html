@@ -13,57 +13,57 @@
 </head>
 <body>
 	<!-- Lets put our Navbar here! -->
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#"><i class="fab fa-angular"></i> Azfar Arif GitHub.IO</a>
-	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
-	  		</button>
 
-	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    	<ul class="navbar-nav mr-auto">
-		      		<li class="nav-item active">
-		        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      		</li>
+		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+			<div class="container">
+				<a class="navbar-brand" href="#"><i class="fab fa-angular"></i> Azfar Arif GitHub.IO</a>
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  		</button>
 
-		      		<li class="nav-item">
-		        	<a class="nav-link" href="#">Link</a>
-		      		</li>
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    	<ul class="navbar-nav mr-auto">
 
-		      		<li class="nav-item dropdown">
-		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          	Project Lists
-		        	</a>
+<!-- 			      		<li class="nav-item">
+			        	<a class="nav-link" href="#">Link</a>
+			      		</li> -->
 
-		        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          		<a class="dropdown-item" href="#">Front End Development</a>
-		          		<a class="dropdown-item" href="#">Back End Development</a>
-		          		<div class="dropdown-divider"></div>
-		          		<a class="dropdown-item" href="#">Data Analytics</a>
-		          		<div class="dropdown-divider"></div>
-		          		<a class="dropdown-item" href="#">Hardware Scripting</a>
-		        	</div>
-		      		</li>
+			      		<li class="nav-item dropdown">
+			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          	Projects
+			        	</a>
 
-		      		<li class="nav-item">
-		        		<a class="nav-link disabled" href="#">Coming Soon!</a>
-		      		</li>
-		    	</ul>
+			        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          		<a class="dropdown-item" href="front_end_index.html">Front End Development</a>
+			          		<a class="dropdown-item" href="back_end_index.html">Back End Development</a>
+			          		<div class="dropdown-divider"></div>
+			          		<a class="dropdown-item" href="data_analytics_index.html">Data Analytics</a>
+			          		<div class="dropdown-divider"></div>
+			          		<a class="dropdown-item" href="hardware_scripting_index.html">Hardware Scripting</a>
+			        	</div>
+			      		</li>
 
-		    	<form class="form-inline my-2 my-lg-0">
-		      		<input class="form-control mr-sm-2" type="search" placeholder="Search My Page!" aria-label="Search">
-		      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    	</form>
-		    </div>
+			      		<li class="nav-item">
+			        		<a class="nav-link disabled" href="#">Coming Soon!</a>
+			      		</li>
+			    	</ul>
+
+			    </div>
+			</div>
+
 		</nav>
+
+
+	<div class="container">
 
 		<div class="jumbotron">
 		 	<h1 class="display-4">Welcome to my GITHUB Page!</h1>
 		 	<p class="lead">This is a simple page for everyone to check on my current projects.</p>
 		 	<hr class="my-4">
-		 	<p>Scroll down to see the list of my available projects, or click the button below for a page!</p>
+		 	<p>Scroll down to see the list of my available projects, or click the button below for a totally random project!</p>
 		 	<p class="lead">
-		    	<a class="btn btn-primary btn-lg" href="#" role="button">I'm feeling Lucky!</a>
+		    	<a class="btn btn-info btn-lg" href="#" role="button">I'm feeling Lucky!</a>
 			</p>
 		</div>
 
@@ -76,8 +76,8 @@
                 			<a class="text-dark" href="#">Latest Project</a>
               			</h3>
               			<div class="mb-1 text-muted">Aug 9</div>
-              			<p class="card-text mb-auto">Mostly learning using R and Python, exploring Power BI currently.</a>
-            			<a href="#">Continue to section</a>
+              			<p class="card-text mb-auto">Mostly learning using R and Python, exploring Power BI currently.</p>
+            			<a href="data_analytics_index.html">Continue to section</a>
             		</div>
             		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/shr_Xn8S8QU/200x250" alt="Data Analytics!">
 				</div>
@@ -91,7 +91,7 @@
               			</h3>
               			<div class="mb-1 text-muted">Aug 9</div>
               			<p class="card-text mb-auto">Using a lot of hardware but mainly Arduino to be placed in here</p>
-              			<a href="#">Continue to section</a>
+              			<a href="hardware_scripting_index.html">Continue to section</a>
             		</div>
             		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/__LXdDYiL-w/200x250" alt="Node.JS !">
 				</div>
@@ -108,7 +108,7 @@
               			</h3>
               			<div class="mb-1 text-muted">Aug 9</div>
               			<p class="card-text mb-auto">Front end website development, mainly using Bootstrap 4!</p>
-              			<a href="#">Continue to section</a>
+              			<a href="front_end_index.html">Continue to section</a>
             		</div>
             		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/u2Ru4QBXA5Q/200x250" alt="Bootstrap 4!">
 				</div>
@@ -122,7 +122,7 @@
               			</h3>
               			<div class="mb-1 text-muted">Aug 9</div>
               			<p class="card-text mb-auto">Back-end processing, mainly using Node.js!</p>
-              			<a href="#">Continue to section</a>
+              			<a href="back_end_index.html">Continue to section</a>
             		</div>
             		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/qvsM28o-k3Y/200x250" alt="Node.JS !">
 				</div>

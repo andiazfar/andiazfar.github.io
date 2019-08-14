@@ -7,16 +7,3 @@ body {
 	background-attachment: fixed;
 	background-size: 100vw 100vh;
 }
-
-.jumbotron {
-	margin-top: 50px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	/*Debug purpose*/
-/*	border-style: solid;
-	border-width: 5px;*/
-
-/*	background-image: url(https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif);
-	background-size: cover;
-	background-position: center;*/
-}
