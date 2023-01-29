@@ -1,126 +1,185 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>AAA Github Page</title>
-	<!-- Lets use Bootstrap 4 as our main CSS for our pages! -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Andi Azfar Arif">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>A & A</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    
 
-	<link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-	<!-- Lets put our Navbar here! -->
+    
 
-		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-			<div class="container">
-				<a class="navbar-brand" href="#"><i class="fab fa-angular"></i> Azfar Arif GitHub.IO</a>
-		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		  		</button>
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    	<ul class="navbar-nav mr-auto">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-<!-- 			      		<li class="nav-item">
-			        	<a class="nav-link" href="#">Link</a>
-			      		</li> -->
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-			      		<li class="nav-item dropdown">
-			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          	Projects
-			        	</a>
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-			        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          		<a class="dropdown-item" href="front_end_index.html">Front End Development</a>
-			          		<a class="dropdown-item" href="back_end_index.html">Back End Development</a>
-			          		<div class="dropdown-divider"></div>
-			          		<a class="dropdown-item" href="data_analytics_index.html">Data Analytics</a>
-			          		<div class="dropdown-divider"></div>
-			          		<a class="dropdown-item" href="hardware_scripting_index.html">Hardware Scripting</a>
-			        	</div>
-			      		</li>
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
 
-			      		<li class="nav-item">
-			        		<a class="nav-link disabled" href="#">Coming Soon!</a>
-			      		</li>
-			    	</ul>
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
 
-			    </div>
-			</div>
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
 
-		</nav>
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
 
+      .blog-header-logo {
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+      font-size: 2.25rem;
+      }
 
-	<div class="container">
+      .main-bg {
+        background-color: lightblue;
+      }
 
-		<div class="jumbotron">
-		 	<h1 class="display-4">Welcome to my GITHUB Page!</h1>
-		 	<p class="lead">This is a simple page for everyone to check on my current projects.</p>
-		 	<hr class="my-4">
-		 	<p>Scroll down to see the list of my available projects, or click the button below for a totally random project!</p>
-		 	<p class="lead">
-		    	<a class="btn btn-info btn-lg" href="#" role="button">I'm feeling Lucky!</a>
-			</p>
-		</div>
+    </style>
 
-		<div class="row mb-2">
-			<div class="col-md-6">
-				<div class="card flex-md-row mb-4 box-shadow h-md-250">
-            		<div class="card-body d-flex flex-column align-items-start">
-              			<strong class="d-inline-block mb-2 text-primary">Data Analytics</strong>
-              			<h3 class="mb-0">
-                			<a class="text-dark" href="#">Latest Project</a>
-              			</h3>
-              			<div class="mb-1 text-muted">Aug 9</div>
-              			<p class="card-text mb-auto">Mostly learning using R and Python, exploring Power BI currently.</p>
-            			<a href="data_analytics_index.html">Continue to section</a>
-            		</div>
-            		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/shr_Xn8S8QU/200x250" alt="Data Analytics!">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card flex-md-row mb-4 box-shadow h-md-250">
-            		<div class="card-body d-flex flex-column align-items-start">
-              			<strong class="d-inline-block mb-2 text-success">Hardware Scripting</strong>
-              			<h3 class="mb-0">
-                			<a class="text-dark" href="#">Latest Project</a>
-              			</h3>
-              			<div class="mb-1 text-muted">Aug 9</div>
-              			<p class="card-text mb-auto">Using a lot of hardware but mainly Arduino to be placed in here.</p>
-              			<a href="hardware_scripting_index.html">Continue to section</a>
-            		</div>
-            		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/__LXdDYiL-w/200x250" alt="Node.JS !">
-				</div>
-			</div>
-		</div>
+    
+  </head>
+  <body>
 
-		<div class="row mb-2">
-			<div class="col-md-12">
-				<div class="card flex-md-row mb-4 box-shadow h-md-250">
-            		<div class="card-body d-flex flex-column align-items-start">
-              			<strong class="d-inline-block mb-2 text-primary">Web Development</strong>
-              			<h3 class="mb-0">
-                			<a class="text-dark" href="#">Latest Project</a>
-              			</h3>
-              			<div class="mb-1 text-muted">Aug 9</div>
-              			<p class="card-text mb-auto">Website development, mainly using Bootstrap 4! Javascripts are covered here as well!</p>
-              			<a href="front_end_index.html">Continue to section</a>
-            		</div>
-            		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/u2Ru4QBXA5Q/200x250" alt="Bootstrap 4!">
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
 
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">
+              A website for Azfar and Amira getting engaged.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <div class="col-4 pt-1">
+          <!-- Can add stuff here if you want -->
+          </div>
+          <div class="col-4 pt-1 text-center">
+            <span>
+              <svg width="200" id="markSvg" viewBox="0 0 550 52" fill="white" data-reactid=".4">
+                <path d="M512.456344,38.9514254 L506.7347697,51.2770864 L500,51.2770864 L523.9710122,0 L547.9420243,51.2770864 L541.2072546,51.2770864 L535.4976003,38.9514254 L512.456344,38.9514254 L512.456344,38.9514254 Z M523.9710122,13.4355547 L515.0548923,33.3318586 L532.899052,33.3318586 L523.9710122,13.4355547 L523.9710122,13.4355547 Z" id="Shape" data-reactid=".4.2">
+                </path>
+                <rect id="Rectangle-1" x="88" y="23" width="367" height="6" data-reactid=".4.1">
+                </rect>
+                <path d="M12.456344,38.9514254 L6.7347697,51.2770864 L0,51.2770864 L23.9710122,0 L47.9420243,51.2770864 L41.2072546,51.2770864 L35.4976003,38.9514254 L12.456344,38.9514254 L12.456344,38.9514254 Z M23.9710122,13.4355547 L15.0548923,33.3318586 L32.899052,33.3318586 L23.9710122,13.4355547 L23.9710122,13.4355547 Z" id="Shape" data-reactid=".4.2">
+                </path>
+              </svg>
+            </span>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <main>
 
-	<script type="text/javascript" src="index.js"></script>
-</body>
+      <section class="py-5 text-center container main-bg">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Azfar & Amira</h1>
+            <p class="lead text-muted">SEPTEMBER 3, 2022 · ALOR STAR, KEDAH</p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">RSVP</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Collapsible Group Item #1
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
 </html>
