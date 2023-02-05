@@ -7,179 +7,202 @@
     <meta name="author" content="Andi Azfar Arif">
     <meta name="generator" content="Hugo 0.101.0">
     <title>A & A</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
-
     
-
-    
-
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
+      .countdown {
         text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
+        font-size: 40px;
+        margin-top: 0px;
       }
 
-      .blog-header-logo {
-      font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-      font-size: 2.25rem;
+      #name-header {
+        font-family: 'YourFontName';
+        font-weight:bold;
       }
 
-      .main-bg {
-        background-color: lightblue;
+      .adelia {
+        font-family: 'YourFontName'
+      }
+
+      .bold {
+        font-weight:bold;
+      }
+
+      .italic {
+        font-style:italic;
+      }
+
+      #header {
+        background-color:#ffefef
+        /*background-color:#f2ffed;*/
+      }
+
+      .site-header {
+        background-color: rgba(0, 0, 0, .85);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+      }
+
+      @font-face {
+        font-family: 'YourFontName'; /*a name to be used later*/
+        src: url('font/adelia_3/adelia.ttf'); /*URL to font*/
+      }
+
+      .highlight-container, .highlight {
+        position: relative;
+      }
+
+      .highlight-container {
+        display: inline-block;
+      }
+      .highlight-container:before {
+        content: " ";
+        display: block;
+        height: 90%;
+        width: 100%;
+        margin-left: -3px;
+        margin-right: -3px;
+        position: absolute;
+        background: #f8cbcb;
+        transform: rotate(2deg);
+        top: -1px;
+        left: -1px;
+        border-radius: 20% 25% 20% 24%;
+        padding: 10px 3px 3px 10px;
       }
 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
   </head>
   <body>
 
-  <div class="container">
-
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">
-              A website for Azfar and Amira getting engaged.
-              </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <div class="col-4 pt-1">
-          <!-- Can add stuff here if you want -->
-          </div>
-          <div class="col-4 pt-1 text-center">
-            <span>
-              <svg width="200" id="markSvg" viewBox="0 0 550 52" fill="white" data-reactid=".4">
-                <path d="M512.456344,38.9514254 L506.7347697,51.2770864 L500,51.2770864 L523.9710122,0 L547.9420243,51.2770864 L541.2072546,51.2770864 L535.4976003,38.9514254 L512.456344,38.9514254 L512.456344,38.9514254 Z M523.9710122,13.4355547 L515.0548923,33.3318586 L532.899052,33.3318586 L523.9710122,13.4355547 L523.9710122,13.4355547 Z" id="Shape" data-reactid=".4.2">
-                </path>
-                <rect id="Rectangle-1" x="88" y="23" width="367" height="6" data-reactid=".4.1">
-                </rect>
-                <path d="M12.456344,38.9514254 L6.7347697,51.2770864 L0,51.2770864 L23.9710122,0 L47.9420243,51.2770864 L41.2072546,51.2770864 L35.4976003,38.9514254 L12.456344,38.9514254 L12.456344,38.9514254 Z M23.9710122,13.4355547 L15.0548923,33.3318586 L32.899052,33.3318586 L23.9710122,13.4355547 L23.9710122,13.4355547 Z" id="Shape" data-reactid=".4.2">
-                </path>
-              </svg>
-            </span>
-          </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-
-      <section class="py-5 text-center container main-bg">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Azfar & Amira</h1>
-            <p class="lead text-muted">SEPTEMBER 3, 2022 · ALOR STAR, KEDAH</p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">RSVP</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Collapsible Group Item #1
-              </button>
-            </h5>
-          </div>
-
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </main>
-
-    <footer class="text-muted py-5">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-      </div>
-    </footer>
-
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" id="header">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <p class="lead fw-normal">Walimatul Urus</p>
+      <hr>
+      <!--
+      <p class="lead fw-normal" style="text-decoration:underline">Walimatul Urus</p>
+      -->
+      <br>
+      <h1 class="display-4 fw-normal" id="name-header">Andi Azfar</h1>
+      <h1 class="display-4 fw-normal" id="name-header">&</h1>
+      <h1 class="display-4 fw-normal" id="name-header">Wan Amira</h1>
+      <br>
+      <hr>
+      <p class="lead fw-normal">MARCH 12, 2023</p>
+      <!--
+      <p class="lead fw-normal"> · </p>
+      -->
+      <a class="btn btn-outline-secondary" href="https://goo.gl/maps/b13uN6Pw7Rkc1VaY6" style="font-weight: bold"><i class="fa fa-map-marker"></i> RAIA HOTEL, KOTA KINABALU</a>
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <p>Assalamualaikum WBT</p>
+    <p>Dengan rasa penuh kesyukuran ke hadrat Allah SWT, kami</p>
+    <span class="highlight-container"><span class="highlight bold">ARIF BIN LAKURA</span></span>
+    <p>&</p>
+    <span class="highlight-container"><span class="highlight bold">WAN JULAINA BINTI WAN ISMAIL</span></span>
+    <p>
+    <p>ingin menjemput</p>
+    <p>YBhg Datuk/Dato'/Datin/Tuan/Puan/Encik/Cik</p>
+    <p>ke majlis perkahwinan putera kami dengan pasangan hatinya</p>
+    <span class="highlight-container"><span class="highlight bold italic">ANDI MUHAMMAD AZFAR BIN ARIF</span></span>
+    <p>&</p>
+    <span class="highlight-container"><span class="highlight bold italic">WAN AMIRA BINTI WAN HAMDAN</span></span>
+    <p></p>
+    <p>Semoga dengan kehadiran kalian dapat menyerikan dan memeriahkan lagi majlis ini</p>
+    <p>Terima Kasih</p>
   </div>
 
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <div class="container">
+    <hr>
+    <br>
+    <p class="lead fw-normal adelia" style="text-align: center">Counting Days</p>
+  </div>
 
+  <div class="countdown container-fluid">
+    <div class="row">
+      <div class="col" id="countdown-timer"></div>
+    </div>
+    <!--
+    <div class="row">
+      <div class="col">
+        <div id="countdown-days"></div>
+        <div class="col">days</div>
+      </div>
+      <div class="col">
+        <div class="col">:</div>
+      </div>
+      <div class="col">
+        <div id="countdown-hours"></div>
+        <div class="col">hours</div>
+      </div>
+      <div class="col">
+        <div class="col">:</div>
+      </div>
+      <div class="col">
+        <div id="countdown-minutes"></div>
+        <div class="col">minutes</div>
+      </div>
+      <div class="col">
+        <div class="col">:</div>
+      </div>
+      <div class="col">
+        <div id="countdown-seconds"></div>
+        <div class="col">seconds</div>
+      </div>
+    </div>
+    -->
+    <p></p>
+  </div>
+
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Mar 12, 2023 10:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
       
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="countdown-timer"
+    document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+    /*
+    document.getElementById("countdown-days").innerHTML = days;
+    document.getElementById("countdown-hours").innerHTML = hours;
+    document.getElementById("countdown-minutes").innerHTML = minutes;
+    document.getElementById("countdown-seconds").innerHTML = seconds;
+    */
+
+    // If current time is 5 hours past on specified date and time, display thank you note.
+    // If current time is on specified time, which is start time, display 'current event' note.
+    if (distance < -18000000) {
+      clearInterval(x);
+      document.getElementById("countdown-timer").innerHTML = "Thanks for coming!";
+    }
+    else if (distance < 0) {
+      // Happening right now
+      document.getElementById("countdown-timer").innerHTML = "It's happening!";
+    }
+  }, 1000);
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
   </body>
 </html>
