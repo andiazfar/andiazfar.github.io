@@ -1,218 +1,126 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Andi Azfar Arif">
-    <meta name="generator" content="Hugo 0.101.0">
-    <title>A & A</title>
-    
-    <style>
-      .countdown {
-        text-align: center;
-        font-size: 40px;
-        margin-top: 0px;
-      }
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AAA Github Page</title>
+	<!-- Lets use Bootstrap 4 as our main CSS for our pages! -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-      #name-header {
-        font-family: 'YourFontName';
-        font-weight:bold;
-      }
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-      .adelia {
-        font-family: 'YourFontName'
-      }
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
-      .bold {
-        font-weight:bold;
-      }
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<!-- Lets put our Navbar here! -->
 
-      .italic {
-        font-style:italic;
-      }
+		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+			<div class="container">
+				<a class="navbar-brand" href="#"><i class="fab fa-angular"></i> Azfar Arif GitHub.IO</a>
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  		</button>
 
-      #header {
-        /*background-color:#ffefef*/
-        background-color:#ffeddb
-        /*background-color:#f2ffed;*/
-      }
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    	<ul class="navbar-nav mr-auto">
 
-      .site-header {
-        background-color: rgba(0, 0, 0, .85);
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        backdrop-filter: saturate(180%) blur(20px);
-      }
+<!-- 			      		<li class="nav-item">
+			        	<a class="nav-link" href="#">Link</a>
+			      		</li> -->
 
-      @font-face {
-        font-family: 'YourFontName'; /*a name to be used later*/
-        src: url('font/adelia_3/adelia.ttf'); /*URL to font*/
-      }
+			      		<li class="nav-item dropdown">
+			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          	Projects
+			        	</a>
 
-      .highlight-container, .highlight {
-        position: relative;
-      }
+			        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          		<a class="dropdown-item" href="front_end_index.html">Front End Development</a>
+			          		<a class="dropdown-item" href="back_end_index.html">Back End Development</a>
+			          		<div class="dropdown-divider"></div>
+			          		<a class="dropdown-item" href="data_analytics_index.html">Data Analytics</a>
+			          		<div class="dropdown-divider"></div>
+			          		<a class="dropdown-item" href="hardware_scripting_index.html">Hardware Scripting</a>
+			        	</div>
+			      		</li>
 
-      .highlight-container {
-        display: inline-block;
-      }
-      .highlight-container:before {
-        content: " ";
-        display: block;
-        height: 90%;
-        width: 100%;
-        margin-left: -3px;
-        margin-right: -3px;
-        position: absolute;
-        background: #FDE7D3;
-        transform: rotate(2deg);
-        top: -1px;
-        left: -1px;
-        border-radius: 20% 25% 20% 24%;
-        padding: 10px 3px 3px 10px;
-      }
+			      		<li class="nav-item">
+			        		<a class="nav-link disabled" href="#">Coming Soon!</a>
+			      		</li>
+			    	</ul>
 
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			    </div>
+			</div>
 
-  </head>
-  <body>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" id="header">
-    <!--<div class="col-md-5 p-lg-5 mx-auto my-5">-->
-    <div class="col-md-5 p-lg-5 mx-auto">
-      <p class="" style="font-family: Lora,serif;">Undangan kami seikhlas hati, harap sudi datang menyeri ke</p>
-      <hr>      
-      <p class="lead fw-normal">WALIMATUL URUS</p>
-      <hr>
-      <!--
-      <p class="lead fw-normal" style="text-decoration:underline">Walimatul Urus</p>
-      -->
-      <br>
-      <h1 class="display-4 fw-normal" id="name-header">Andi Azfar</h1>
-      <h1 class="display-4 fw-normal" id="name-header">&</h1>
-      <h1 class="display-4 fw-normal" id="name-header">Wan Amira</h1>
-      <br>
-      <hr>
-      <p class="lead fw-normal">AHAD | 12 MAC, 2023</p>
-      <!--
-      <p class="lead fw-normal"> · </p>
-      -->
-      <a class="btn btn-outline-secondary" href="https://goo.gl/maps/b13uN6Pw7Rkc1VaY6" style="font-weight: bold"><i class="fa fa-map-marker"></i> RAIA HOTEL, KOTA KINABALU</a>
-      <p></p>
-    </div>
-  </div>
+		</nav>
 
-  <div class="container" style="display: flex; justify-content: center;">
-    <img src="acap_e-invite.png" alt="A & A" style="width: 110%;"> 
-  </div>
-  
-  <br>
 
-  <div style="text-align:center">
-    <p>Assalamualaikum WBT</p>
-    <p>Dengan rasa penuh kesyukuran ke hadrat Allah SWT, kami</p>
-    <span class="highlight-container"><span class="highlight bold">ARIF BIN LAKURA</span></span>
-    <p>&</p>
-    <span class="highlight-container"><span class="highlight bold">WAN JULAINA BINTI WAN ISMAIL</span></span>
-    <p>
-    <p>ingin menjemput</p>
-    <p>YBhg Datuk/Dato'/Datin/Tuan/Puan/Encik/Cik</p>
-    <p>ke majlis perkahwinan putera kami dengan pasangan hatinya</p>
-    <span class="highlight-container"><span class="highlight bold italic">ANDI MUHAMMAD AZFAR BIN ARIF</span></span>
-    <p>&</p>
-    <span class="highlight-container"><span class="highlight bold italic">WAN AMIRA BINTI WAN HAMDAN</span></span>
-    <p></p>
-    <p>Semoga dengan kehadiran kalian dapat menyerikan dan memeriahkan lagi majlis ini</p>
-    <p>Terima Kasih</p>
-  </div>
+	<div class="container">
 
-  
-  <div class="container">
-    <hr>
-    <br>
-    <p class="lead fw-normal adelia" style="text-align: center">Counting Days</p>
-  </div>
+		<div class="jumbotron">
+		 	<h1 class="display-4">Welcome to my GITHUB Page!</h1>
+		 	<p class="lead">This is a simple page for everyone to check on my current projects.</p>
+		 	<hr class="my-4">
+		 	<p>Scroll down to see the list of my available projects, or click the button below for a totally random project!</p>
+		 	<p class="lead">
+		    	<a class="btn btn-info btn-lg" href="#" role="button">I'm feeling Lucky!</a>
+			</p>
+		</div>
 
-  <div class="countdown container-fluid">
-    <div class="row">
-      <div class="col" id="countdown-timer"></div>
-    </div>
-    <!--
-    <div class="row">
-      <div class="col">
-        <div id="countdown-days"></div>
-        <div class="col">days</div>
-      </div>
-      <div class="col">
-        <div class="col">:</div>
-      </div>
-      <div class="col">
-        <div id="countdown-hours"></div>
-        <div class="col">hours</div>
-      </div>
-      <div class="col">
-        <div class="col">:</div>
-      </div>
-      <div class="col">
-        <div id="countdown-minutes"></div>
-        <div class="col">minutes</div>
-      </div>
-      <div class="col">
-        <div class="col">:</div>
-      </div>
-      <div class="col">
-        <div id="countdown-seconds"></div>
-        <div class="col">seconds</div>
-      </div>
-    </div>
-    -->
-    <p></p>
-  </div>
+		<div class="row mb-2">
+			<div class="col-md-6">
+				<div class="card flex-md-row mb-4 box-shadow h-md-250">
+            		<div class="card-body d-flex flex-column align-items-start">
+              			<strong class="d-inline-block mb-2 text-primary">Data Analytics</strong>
+              			<h3 class="mb-0">
+                			<a class="text-dark" href="#">Latest Project</a>
+              			</h3>
+              			<div class="mb-1 text-muted">Aug 9</div>
+              			<p class="card-text mb-auto">Mostly learning using R and Python, exploring Power BI currently.</p>
+            			<a href="data_analytics_index.html">Continue to section</a>
+            		</div>
+            		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/shr_Xn8S8QU/200x250" alt="Data Analytics!">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card flex-md-row mb-4 box-shadow h-md-250">
+            		<div class="card-body d-flex flex-column align-items-start">
+              			<strong class="d-inline-block mb-2 text-success">Hardware Scripting</strong>
+              			<h3 class="mb-0">
+                			<a class="text-dark" href="#">Latest Project</a>
+              			</h3>
+              			<div class="mb-1 text-muted">Aug 9</div>
+              			<p class="card-text mb-auto">Using a lot of hardware but mainly Arduino to be placed in here.</p>
+              			<a href="hardware_scripting_index.html">Continue to section</a>
+            		</div>
+            		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/__LXdDYiL-w/200x250" alt="Node.JS !">
+				</div>
+			</div>
+		</div>
 
-  <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Mar 12, 2023 10:00:00").getTime();
+		<div class="row mb-2">
+			<div class="col-md-12">
+				<div class="card flex-md-row mb-4 box-shadow h-md-250">
+            		<div class="card-body d-flex flex-column align-items-start">
+              			<strong class="d-inline-block mb-2 text-primary">Web Development</strong>
+              			<h3 class="mb-0">
+                			<a class="text-dark" href="#">Latest Project</a>
+              			</h3>
+              			<div class="mb-1 text-muted">Aug 9</div>
+              			<p class="card-text mb-auto">Website development, mainly using Bootstrap 4! Javascripts are covered here as well!</p>
+              			<a href="front_end_index.html">Continue to section</a>
+            		</div>
+            		<img class="card-img-right flex-auto d-none d-md-block" src="https://source.unsplash.com/u2Ru4QBXA5Q/200x250" alt="Bootstrap 4!">
+				</div>
+			</div>
+		</div>
+	</div>
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
 
-    // Get today's date and time
-    var now = new Date().getTime();
-      
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-      
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-    // Output the result in an element with id="countdown-timer"
-    document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-    /*
-    document.getElementById("countdown-days").innerHTML = days;
-    document.getElementById("countdown-hours").innerHTML = hours;
-    document.getElementById("countdown-minutes").innerHTML = minutes;
-    document.getElementById("countdown-seconds").innerHTML = seconds;
-    */
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    // If current time is 5 hours past on specified date and time, display thank you note.
-    // If current time is on specified time, which is start time, display 'current event' note.
-    if (distance < -18000000) {
-      clearInterval(x);
-      document.getElementById("countdown-timer").innerHTML = "Thanks for coming!";
-    }
-    else if (distance < 0) {
-      // Happening right now
-      document.getElementById("countdown-timer").innerHTML = "It's happening!";
-    }
-  }, 1000);
-  </script>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-  </body>
+	<script type="text/javascript" src="index.js"></script>
+</body>
 </html>
