@@ -30,6 +30,19 @@ export default function Home() {
           }}
         />
 
+        <motion.a
+          href="/card"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="group absolute right-6 top-6 z-10 inline-flex items-center gap-2 text-sm text-zinc-400 transition-colors hover:text-white sm:right-8 sm:top-8"
+        >
+          Card
+          <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-0.5">
+            &rarr;
+          </span>
+        </motion.a>
+
         <main className="relative mx-auto flex w-full max-w-3xl flex-col gap-24 px-6 py-24 sm:gap-32 sm:py-32">
           <section className="flex flex-col gap-5">
             <motion.h1
