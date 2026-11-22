@@ -20,10 +20,17 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run build
+      # A user site (<name>.github.io) is served at the root; a project site under /<repo>.
+      # Done in shell because an empty string is falsy in `a && '' || b` expressions.
+      - name: Build
+        run: |
+          case "$REPO" in
+            *.github.io) export PAGES_BASE_PATH="" ;;
+            *) export PAGES_BASE_PATH="/$REPO" ;;
+          esac
+          npm run build
         env:
-          # A user site (<name>.github.io) is served at the root; a project site under /<repo>.
-          PAGES_BASE_PATH: ${{ endsWith(github.event.repository.name, '.github.io') && '' || format('/{0}', github.event.repository.name) }}
+          REPO: ${{ github.event.repository.name }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
