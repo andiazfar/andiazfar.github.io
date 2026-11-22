@@ -97,3 +97,11 @@ Status: Accepted (2026-11-22)
 Get online first on the free `<user>.github.io` address. D-006 (domain) stays open.
 Risk: do not write the NFC card until the final domain is chosen, since the URL on a
 handed-out card cannot be changed.
+
+## D-016 — Site is the user site andiazfar.github.io (supersedes the project-site URL in D-015)
+Status: Accepted (2026-11-22)
+The site is served from the repo `andiazfar/andiazfar.github.io`, at the root of
+https://andiazfar.github.io/ with no base path. It replaces the older "AAA Github Page".
+The old files stay on that repo's `master` branch and in a local copy at
+`D:\programming\_backup_andiazfar.github.io`; the new site lives on `main`.
+Rejected: renaming the old repo (owner chose to overwrite in place).
